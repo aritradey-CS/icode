@@ -7,3 +7,9 @@ html,body{
     width: 100%;
     position: absolute;
 }
+
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: blueviolet;
+}
