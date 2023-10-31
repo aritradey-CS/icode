@@ -1,6 +1,6 @@
 html,body{
     height: 100%;
-    width: 100%;
+    width: 95%;
 }
 .main{
     height: 100%;
@@ -30,4 +30,23 @@ html,body{
 }
 .nav h4{
     font-size: 1vw;
+}
+
+.nav i{
+    font-size: 1.6vw;
+    flex-wrap: 800;
+    display: none;
+}
+@media (max-width:600px) {
+    .nav{
+        background-color: aquamarine;
+        color: #fff;
+        padding: 0 5vw;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4 {
+        font-size:4vw ;
+    }
 }
