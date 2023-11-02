@@ -17,11 +17,11 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 0 3vw;
+    
 }
 .nav-part2{
     display: flex;
     gap: 4vw;
-    justify-content: space-between;
     align-items: center;
 }
 .nav h2{
@@ -33,20 +33,25 @@ html,body{
 }
 
 .nav i{
-    font-size: 1.6vw;
-    flex-wrap: 800;
+
+    font-weight: 800;
     display: none;
 }
 @media (max-width:600px) {
     .nav{
-        background-color: aquamarine;
+        width: 100%;
+        background-color: rgb(2, 102, 69);
         color: #fff;
-        padding: 0 5vw;
     }
     .nav h2{
         font-size: 6vw;
     }
     .nav h4 {
         font-size:4vw ;
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 6vw;
     }
 }
