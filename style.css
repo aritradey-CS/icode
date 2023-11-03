@@ -2,10 +2,11 @@
   /* --primary-color :; */
   --border-color: #dadada;
   --background-color: #fff;
-  --media-bg-color: #73bf64;
+  --btn-bg-color1: #73bf64;
+  --btn-bg-color2: #00d4ff;
+  --new-bg-color-for-hover:rgb(63,94,251);
   --span-color: rgb(255, 255, 255);
   --paragraph-color: #666;
-  /* --container-color:; */
 }
 html,
 body {
@@ -25,7 +26,7 @@ body {
 }
 
 .nav {
-  height: 100px;
+  height: 80px;
   width: 100%;
   /* background-color: blueviolet; */
   border-bottom: 2px solid var(--border-color);
@@ -55,6 +56,18 @@ body {
   font-weight: 800;
   display: none;
 }
+.nav button {
+  font-size: 1vw;
+  background-color: var(--btn-bg-color2);
+  border: none;
+  border-radius: 20px;
+  padding: 0.8vw 1.3vw;
+}
+.nav button:hover {
+    background-color: var(--new-bg-color-for-hover);
+    color: var(--new-text-color-for-hover);
+    transform: scale(1.05); 
+  }
 .content {
   height: calc(100% - 100px);
   width: 100%;
@@ -64,7 +77,6 @@ body {
 .left {
   height: 100%;
   width: 55%;
-  /* background-color: rebeccapurple; */
   padding: 7vw 4vw;
 }
 .left h1 {
@@ -72,7 +84,7 @@ body {
   line-height: 4.4vw;
 }
 .left h1 span {
-  color: var(--media-bg-color);
+  color: var(--btn-bg-color1);
 }
 .left p {
   font-size: 1.2vw;
@@ -85,27 +97,32 @@ body {
 button {
   font-size: 1.5vw;
   padding: 1vw 2.2vw;
-  background-color: var(--media-bg-color);
+  background-color: var(--btn-bg-color1);
   color: var(--background-color);
   border: none;
   border-radius: 5px;
   font-weight: 700;
 }
+button:hover {
+    background-color: var(--new-bg-color-for-hover);
+    color: var(--new-text-color-for-hover);
+    transform: scale(1.05); 
+  }
 .right {
   height: 100%;
   width: 45%;
   /* background-color: greenyellow; */
 }
-.right img{
-    margin: 10px 0px;
-    height: 100%;
-    width: 100%;
+.right img {
+  margin: 10px 0px;
+  height: 100%;
+  width: 100%;
 }
 @media (max-width: 600px) {
   .nav {
     height: 60px;
     width: 100%;
-    background-color: var(--media-bg-color);
+    background-color: var(--btn-bg-color1);
     color: var(--background-color);
   }
   .nav h2 {
