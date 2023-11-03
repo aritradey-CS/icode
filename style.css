@@ -63,7 +63,9 @@ body {
     color: var(--new-text-color-for-hover);
     transform: scale(1.05); 
   }
-
+.nav img{
+  height: 3vw;
+}
 .content {
   height: calc(100% - 100px);
   width: 100%;
@@ -118,7 +120,7 @@ button:hover {
   .nav {
     height: 60px;
     width: 100%;
-    background-color: var(--btn-bg-color1);
+    /* background-color: var(--btn-bg-color1); */
     color: var(--background-color);
   }
   .nav h2 {
@@ -131,13 +133,17 @@ button:hover {
   .nav i {
     display: block;
     font-size: 6vw;
+    color: var(--paragraph-color);
   }
   .nav button {
-    font-size: 3vw;   
+    font-size: 4vw;   
     background-color: var(--btn-bg-color2);
     border: none;
     border-radius: 20px;
     padding: 1.4vw 2.2vw;
+  }
+  .nav img{
+    height: 5vw;
   }
 .content{
     height: calc(100% - 60px);
@@ -166,7 +172,7 @@ button:hover {
 }
   
   button {
-    font-size: 4.5vw;
+    font-size: 6.5vw;
     padding: 1vw 2.2vw;
     background-color: var(--btn-bg-color1);
     color: var(--background-color);
